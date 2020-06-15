@@ -62,7 +62,6 @@ class ViewController:
         
         celulaHeroi.setup(heroiAtual)
         celulaHeroi.labelTitulo.text = heroiAtual.name
-//        celulaHeroi.imagemHeroi.image = UIImage(named: heroiAtual.thumbnail)
         celulaHeroi.imagemHeroi.layer.cornerRadius = 10
         celulaHeroi.imagemHeroi.layer.masksToBounds = true
         return celulaHeroi
@@ -75,8 +74,6 @@ class ViewController:
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         heroiSelecionado = listaHerois[indexPath.row]
         performSegue(withIdentifier: "IrParaDetalhes", sender: self)
-        
-        print(listaHerois[indexPath.row].name)
     }
     
     //MARK: - Segue

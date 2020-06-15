@@ -37,13 +37,6 @@ class MarvelAPI: NSObject {
                             completion()
                         }
                     }
-//                    var listaHerois: Array<Heroi> = []
-//                    let json = try response.result.get() as! Dictionary<String, Any>
-//                    let jsonData = json["data"] as! Dictionary<String, Any>
-//                     {return}
-//                    for item in listaDicionario {
-//                        listaHerois.append(HeroDAO().toHero(dicionario: item))
-//                    }
                 } catch {
                     print("ERRO ao converter!")
                     completion()
