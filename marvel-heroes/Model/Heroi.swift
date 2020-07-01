@@ -41,8 +41,6 @@ class Heroi: NSObject, NSCoding {
         coder.encode(name, forKey: "name")
         coder.encode(heroDescription, forKey: "heroDescription")
         coder.encode(thumbnail, forKey: "thumbnail")
-        
-        
     }
     
     required init?(coder: NSCoder) {
